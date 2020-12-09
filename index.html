@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Talk Klingon</title>
+
+    <style>
+       
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        textarea {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 6px 6px 6px 6px;
+            font-size: 1em;
+            line-height: 1.4em;
+            padding: 5px 8px;
+            height: 25vh;
+            width: 90%;
+            align-self: center;
+            background-color: #AABDBF;
+            display: block;
+            font-weight: bold;
+            color:#011526;
+            
+        }
+
+        #output {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 80px;
+            margin-left: 50px;
+            border-radius: 6px 6px 6px 6px;
+            font-size: 1em;
+            line-height: 1.4em;
+            padding: 5px 8px;
+            height: 25vh;
+            width: 90%;
+            align-self: center;
+            background-color: #AABDBF;
+            border: 1px solid black;
+            color: #011526;
+            font-weight: bold;
+            
+        }
+
+        html {
+           background: url("bg.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .rectangle-section {
+            height: 90px;
+            width: 100%;
+            /* background-color: #07272F; */
+            font-size: 55px;
+            text-align: center;
+            padding-top: 40px;
+            color: #F4F1EE;
+            font-family: 'Roboto', sans-serif;
+        
+        }
+        button {
+            background-color: #EBF2F1;
+            padding: 0.5rem 0.5rem;
+            position: absolute;
+            left: 45%;
+            top:53%;
+            border:#F4F1EE;
+            height: 8vh;
+            width: 100px;
+            border-radius: 6px 6px 6px 6px;
+            font-family: 'Roboto', sans-serif;
+            display: block;
+            font-weight: bold;
+            color: #011526;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle-section">
+       <strong> Sheldon's Klingon Translation Application</strong><br>
+       
+
+    </div>
+    <div>
+        <textarea id="txt-input" placeholder="Enter the text in English here and click Translate to change it to Sheldon's favourite Klingon"></textarea>
+    </div>
+    <div>
+        <button id="btn-translate">Translate</button>
+    </div>
+    <div>
+        <!-- <div style="font-size:larger">The output will come here 👇</div> -->
+        <!-- funtranslations.com -->
+        <div id="output"></div>
+    </div>
+
+
+
+    <div class="rectangle-section">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
